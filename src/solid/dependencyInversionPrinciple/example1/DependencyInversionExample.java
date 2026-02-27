@@ -8,7 +8,7 @@ public class DependencyInversionExample {
         Database mysql = new MySQLDatabase();
         UserRepository userRepositoryForPostgres = new UserRepository(postgres);
         UserRepository userRepositoryForMySQL = new UserRepository(mysql);
-
+        Database postgres2 = new PostgresDatabase();
     }
 
 }
