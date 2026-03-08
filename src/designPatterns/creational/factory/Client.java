@@ -1,8 +1,5 @@
 package designPatterns.creational.factory;
 
-import java.io.*;
-import java.util.Calendar;
-
 // Library classes
 abstract class Vehicle {
     public abstract void printVehicle();
@@ -22,11 +19,11 @@ class FourWheeler extends Vehicle {
     }
 }
 
-// Client (or user) class
-class Client {
+// Customer (or user) class
+class Clerk {
     private Vehicle pVehicle;
 
-    public Client(int type){
+    public Clerk(int type){
         if (type == 1) {
             pVehicle = new TwoWheeler();
         }
@@ -49,9 +46,9 @@ class Client {
 }
 
 // Driver Code
-public class GFG {
+public class Client {
     public static void main(String[] args) {
-        Client pClient = new Client(1);
+        Clerk pClient = new Clerk(1);
         Vehicle pVehicle = pClient.createVehicle();
         if (pVehicle != null) {
             pVehicle.printVehicle();

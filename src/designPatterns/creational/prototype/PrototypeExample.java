@@ -30,6 +30,8 @@ class Car implements Prototype{
     public Prototype clone() {
         return new Car(this.model, this.color);
     }
+
+
 }
 
 

@@ -1,4 +1,4 @@
-package designPatterns.creational.singletone;
+package designPatterns.creational.singleton;
 
 public class SingletonExample {
     public static void main(String[] args) {
