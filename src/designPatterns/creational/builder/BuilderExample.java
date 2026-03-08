@@ -8,7 +8,6 @@ public class BuilderExample {
 }
 
 class User{
-    private String bekzod;
     private String name;
     private String email;
     private String phone;
